@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Delius&display=swap');
+
+:root {
+
+    --fonte-primaria: "Barlow Condensed", sans-serif;
+    --fonte-secundaria: "Delius", cursive;
+    --azul-federal: #03045eff;
+    --preto: #000000;
+    --ciano-pacífico: rgb(210, 210, 210);
+    --verde-claro: rgb(13, 213, 153);
+    --light-cyan: #caf0f8ff
+}
+
+body{
+    background-color: var(--azul-federal);
+    color:var(--preto);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: normal;
+}
+
+
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    font-family: var(--fonte-primaria);
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+.titulo-principal span{
+    color: var(--verde-claro);
+}
+
+.botao{
+    font-family: var(--fonte-primaria);
+    background-color: var(--verde-claro);
+    color: var(--preto);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--verde-claro);
+    border-left: 4px solid var(--verde-claro);
+    border-right: 4px solid var(--verde-claro);
+    border-top: none;
+
+}
+
+.botoes{
+    display: block;
+}
+
+.botao:first-child{
+    border-radius: 0 0 40px 40px;
+}
+
+.ativo{
+    background-color: var(--azul-federal);
+    border-bottom: var(--verde-claro);
+}
+.abas-textos{
+    background-color: var(--verde-claro);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo.ativo{
+    display: block;
+}
+
+.aba-conteudo{
+    display: none;
+}
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color:var(--verde-claro)
+}
+
+@media screen and (min-widht:768px) {
+    .botoes{ display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+}
