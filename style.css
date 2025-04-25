@@ -51,9 +51,9 @@ body{
     font-size: 18px;
     align-items: center;
     width: 100%;
-    border-bottom: 4px solid var(--verde-claro);
-    border-left: 4px solid var(--verde-claro);
-    border-right: 4px solid var(--verde-claro);
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 4px solid var(--botao-ativo);
+    border-right: 4px solid var(--botao-ativo);
     border-top: none;
 
 }
@@ -93,7 +93,7 @@ body{
     color:var(--verde-claro)
 }
 
-@media screen and (min-widht:768px) {
+@media screen and (min-whidth:768px) {
     .botoes{ display: flex;
     }
     .botao:first-child{
